@@ -6,31 +6,40 @@ linear-gradient(#FFC3A0, #FFAFBD);
 :root {
     font-size: 16px;
 }
+
 html {
     height: 100%;
 }
+
 body {
     font-family: Helvetica;
     color: #707070;
     overflow-x: hidden;
-    background: linear-gradient(#FFC3A0, #FFAFBD);   
+    background: linear-gradient(#FFC3A0, #FFAFBD);
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .dfjc {
     display: flex;
     justify-content: end;
 }
 
 /* modal */
-.modal-footer a{
-    color: white;
-	cursor: pointer;
-	font-size: 1.5rem;
-    border-radius: .75rem;
-    font-weight: normal;
+.link {
+    display: flex;
+    justify-content: end;
+    margin: .5rem;
+    background: #dcdcdc;
+    padding-left: 1rem;
+    border-radius: 5px;
 }
+
+.modal-body a {
+    margin-left: auto;
+}
+
 /* contact links */
 .left-pane {
     background: white;
@@ -40,13 +49,13 @@ body {
     padding: 0 4%;
 }
 
-.contacts{
+.contacts {
     margin-top: 200px;
 }
 
 h1 {
     text-align: right;
-    font-size: 8vw; 
+    font-size: 8vw;
     line-height: 1;
     font-weight: 300;
 }
@@ -56,11 +65,11 @@ h1 {
     justify-content: end;
 }
 
-.contacts a{
+.contacts a {
     margin: .5rem;
     color: inherit;
-	cursor: pointer;
-	font-size: 2vw;
+    cursor: pointer;
+    font-size: 2vw;
     border-radius: .75rem;
     font-weight: bold;
     justify-content: center;
@@ -71,7 +80,8 @@ h1 {
     color: #ffff;
 }
 
-.contacts a:focus, .contacts a:active {
+.contacts a:focus,
+.contacts a:active {
     text-decoration: none;
     color: inherit;
 }
@@ -104,19 +114,19 @@ h2 {
 }
 
 p {
-    padding-top:.5rem;
+    padding-top: .5rem;
     font-weight: 100;
     font-size: 1.7rem;
     line-height: 2.2rem;
 }
 
-.left-arrow{
+.left-arrow {
     position: absolute;
     left: 2rem;
     bottom: .5rem;
 }
 
-.right-arrow{
+.right-arrow {
     position: absolute;
     right: 2rem;
     bottom: .5rem;
@@ -131,58 +141,68 @@ p {
         justify-content: center;
     }
 
-    .left-pane, .contacts nav{
+    .left-pane,
+    .contacts nav {
         justify-content: center;
     }
-    .contacts{
+
+    .contacts {
         margin: 150px 0 0 0;
     }
-    h1{
+
+    h1 {
         text-align: center;
         font-size: 3rem;
     }
-    .contacts a{
-        font-size: 1rem; 
+
+    .contacts a {
+        font-size: 1rem;
     }
+
     i {
         font-size: 1.5rem;
         text-align: center;
     }
 
     /* right pane mobile */
-    .right-pane{
+    .right-pane {
         height: 100%;
     }
+
     .info {
         width: 75%;
         height: 100%;
         margin: 2.5rem auto;
-        padding: 3rem 2rem ;
+        padding: 3rem 2rem;
     }
 
     h2 {
         font-size: 2rem;
     }
+
     p {
         font-size: 1.2rem;
         line-height: 1.5rem;
     }
 
-    .left-arrow{
+    .left-arrow {
         left: 1rem;
     }
-    
-    .right-arrow{
+
+    .right-arrow {
         right: 1rem;
     }
 }
+
 @media only screen and (min-width: 1600px) {
-    h1{
+    h1 {
         font-size: 8rem;
     }
-    .contacts a{
-        font-size: 2rem; 
+
+    .contacts a {
+        font-size: 2rem;
     }
+
     i {
         font-size: 2rem;
         text-align: center;
