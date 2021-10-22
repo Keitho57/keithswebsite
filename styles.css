@@ -9,6 +9,8 @@ linear-gradient(#FFC3A0, #FFAFBD);
 body {
     font-family: Helvetica;
     color: #707070;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .dfjc {
     display: flex;
@@ -21,7 +23,6 @@ body {
     box-shadow: 20px 0 6px rgba(0, 0, 0, 0.16);
     z-index: 1;
     padding: 0 3%;
-   
 }
 
 .contacts{
@@ -47,7 +48,6 @@ h1 {
 	font-size: 2vw;
     border-radius: .75rem;
     font-weight: bold;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -68,8 +68,7 @@ i {
 /* right pane */
 .right-pane {
     padding: 0;
-    background: linear-gradient(#FFC3A0, #FFAFBD);
-    
+    background: linear-gradient(#FFC3A0, #FFAFBD);   
 }
 
 .info {
@@ -79,6 +78,7 @@ i {
     height: 80%;
     margin: 5rem auto;
     background: #ffff;
+    box-shadow: 20px 0 6px rgba(0, 0, 0, 0.16);
 }
 
 h2 {
@@ -98,33 +98,66 @@ p {
 .left-arrow{
     position: absolute;
     left: 2rem;
-    bottom: 1rem;
+    bottom: .5rem;
 }
 
 .right-arrow{
     position: absolute;
     right: 2rem;
-    bottom: 1rem;
+    bottom: .5rem;
 }
 
 @media only screen and (max-width: 768px) {
-    h1{
-        text-align: center;
-        font-size: 5rem;
+
+    /* left pane mobile */
+    .left-pane {
+        height: 30rem;
+        justify-content: center;
     }
 
-    .left-pane {
-        height: 40rem;
-    }
     .left-pane, .contacts nav{
         justify-content: center;
     }
+    .contacts{
+        margin: 150px 0 0 0;
+    }
+    h1{
+        text-align: center;
+        font-size: 3rem;
+    }
     .contacts a{
-        font-size: 1.5rem; 
+        font-size: 1rem; 
     }
     i {
         font-size: 1.5rem;
         text-align: center;
+    }
+
+    /* right pane mobile */
+    .right-pane {
+        height: 100%;
+    } 
+
+    .info {
+   
+        margin: 2.5rem auto;
+        padding: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .left-arrow{
+        left: 1rem;
+    }
+    
+    .right-arrow{
+        right: 1rem;
     }
 }
 @media only screen and (min-width: 1600px) {
