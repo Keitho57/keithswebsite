@@ -30,12 +30,23 @@ body {
 .link {
     display: flex;
     justify-content: end;
-    margin: .5rem;
+    margin: .75rem;
     background: #dcdcdc;
     padding-left: 1rem;
     border-radius: 5px;
 }
 
+.modal-body input{
+    width: 100%;
+    background: none;
+    border:none;
+    outline-style: none;
+    color: #707070;
+   font-size: 1.2rem;
+}
+.modal-body i{
+    font-size: 2rem;
+}
 .modal-body a {
     margin-left: auto;
 }
@@ -86,7 +97,7 @@ h1 {
     color: inherit;
 }
 
-i {
+.contacts i {
     font-size: 2.5vw;
 }
 
@@ -103,7 +114,11 @@ i {
     width: 30rem;
     height: 50rem;
     background: #ffff;
-    box-shadow: 20px 0 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.16),
+                25px 25px 0px #ffff,
+                45px 45px 6px rgba(0, 0, 0, 0.16),
+                50px 50px 0px #ffff,
+                55px 55px 6px rgba(0, 0, 0, 0.16);
 }
 
 h2 {
@@ -120,6 +135,9 @@ p {
     line-height: 2.2rem;
 }
 
+.info i {
+    font-size: 2rem;
+}
 .left-arrow {
     position: absolute;
     left: 2rem;
@@ -159,7 +177,7 @@ p {
         font-size: 1rem;
     }
 
-    i {
+    .contacts i {
         font-size: 1.5rem;
         text-align: center;
     }
@@ -183,6 +201,10 @@ p {
     p {
         font-size: 1.2rem;
         line-height: 1.5rem;
+    }
+
+    .info i {
+        font-size: 1.5rem;
     }
 
     .left-arrow {

@@ -6,15 +6,11 @@ myModal.addEventListener('shown.bs.modal', function () {
   myInput.focus()
 })
 
-function copy() {
-    /* Get the text field */
-  
-    var copyText = document.getElementById("myInput");
-    /* Select the text field */
+function copy(id) {
+    var copyText = $("#" + id);
     copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    document.execCommand("copy");
+  }
   
-    /* Copy the text inside the text field */
-    navigator.clipboard.writeText(copyText.value);
-    alert("Copied the text: " + copyText.value);
-}
+
+  
